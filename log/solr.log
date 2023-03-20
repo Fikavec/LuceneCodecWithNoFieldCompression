@@ -1,0 +1,186 @@
+2023-03-20 20:15:24.681 INFO  (main) [   ] o.e.j.u.log Logging initialized @857ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-03-20 20:15:24.855 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.17+8-post-Ubuntu-1ubuntu220.04
+2023-03-20 20:15:24.866 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///mnt/solrramdisk/solr-8.11.2/server/contexts/] at interval 0
+2023-03-20 20:15:25.061 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-03-20 20:15:25.069 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-03-20 20:15:25.069 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-03-20 20:15:25.071 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2023-03-20 20:15:25.123 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-03-20 20:15:25.126 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.2
+2023-03-20 20:15:25.126 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2023-03-20 20:15:25.126 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /mnt/solrramdisk/solr-8.11.2
+2023-03-20 20:15:25.127 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-03-20T20:15:25.127091Z
+2023-03-20 20:15:25.156 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /mnt/solrramdisk/solr-8.11.2/server/solr
+2023-03-20 20:15:25.156 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /mnt/solrramdisk/solr-8.11.2/server/solr/solr.xml
+2023-03-20 20:15:25.224 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@70ed52de, but no JMX reporters were configured - adding default JMX reporter.
+2023-03-20 20:15:25.726 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-03-20 20:15:25.837 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5e746d37[provider=null,keyStore=null,trustStore=null]
+2023-03-20 20:15:25.837 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5e746d37[provider=null,keyStore=null,trustStore=null]
+2023-03-20 20:15:25.963 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@74d3b638[provider=null,keyStore=null,trustStore=null]
+2023-03-20 20:15:25.963 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@74d3b638[provider=null,keyStore=null,trustStore=null]
+2023-03-20 20:15:26.001 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: /mnt/solrramdisk/solr-8.11.2/server/solr/zoo.cfg
+2023-03-20 20:15:26.003 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2023-03-20 20:15:26.003 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2023-03-20 20:15:26.049 WARN  (Thread-11) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2023-03-20 20:15:26.504 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2023-03-20 20:15:26.538 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2023-03-20 20:15:26.564 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2023-03-20 20:15:26.564 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2023-03-20 20:15:26.807 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2023-03-20 20:15:26.845 INFO  (main) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 127.0.1.1:8983_solr
+2023-03-20 20:15:26.849 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=72058276276404224-127.0.1.1:8983_solr-n_0000000000) starting
+2023-03-20 20:15:26.939 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/127.0.1.1:8983_solr
+2023-03-20 20:15:26.948 INFO  (OverseerStateUpdate-72058276276404224-127.0.1.1:8983_solr-n_0000000000) [   ] o.a.s.c.Overseer Starting to work on the main queue : 127.0.1.1:8983_solr
+2023-03-20 20:15:26.980 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2023-03-20 20:15:26.994 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2023-03-20 20:15:27.005 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-03-20 20:15:27.239 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-03-20 20:15:27.296 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@70ed52de
+2023-03-20 20:15:27.297 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@70ed52de
+2023-03-20 20:15:27.297 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@70ed52de
+2023-03-20 20:15:27.320 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /mnt/solrramdisk/solr-8.11.2/server/solr
+2023-03-20 20:15:27.374 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@19fe4644{/solr,file:///mnt/solrramdisk/solr-8.11.2/server/solr-webapp/webapp/,AVAILABLE}{/mnt/solrramdisk/solr-8.11.2/server/solr-webapp/webapp}
+2023-03-20 20:15:27.383 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@781f10f2{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-03-20 20:15:27.383 INFO  (main) [   ] o.e.j.s.Server Started @3562ms
+2023-03-20 20:15:45.401 INFO  (qtp1350751778-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=35
+2023-03-20 20:15:45.404 INFO  (qtp1350751778-21) [   ] o.a.s.c.u.FastWriter FastWriter.BUFSIZE=8192
+2023-03-20 20:15:45.462 INFO  (qtp1350751778-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=6
+2023-03-20 20:15:45.472 INFO  (qtp1350751778-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=4
+2023-03-20 20:15:45.834 INFO  (qtp1350751778-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=0
+2023-03-20 20:15:45.858 INFO  (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.CreateCollectionCmd Create collection test_collection
+2023-03-20 20:15:46.006 INFO  (OverseerStateUpdate-72058276276404224-127.0.1.1:8983_solr-n_0000000000) [   ] o.a.s.c.o.SliceMutator createReplica() {
+  "operation":"ADDREPLICA",
+  "collection":"test_collection",
+  "shard":"shard1",
+  "core":"test_collection_shard1_replica_n1",
+  "state":"down",
+  "node_name":"127.0.1.1:8983_solr",
+  "base_url":"http://127.0.1.1:8983/solr",
+  "type":"NRT",
+  "waitForFinalState":"false"} 
+2023-03-20 20:15:46.255 INFO  (qtp1350751778-24) [   x:test_collection_shard1_replica_n1] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node2&collection.configName=test_collection&newCollection=true&name=test_collection_shard1_replica_n1&action=CREATE&numShards=1&collection=test_collection&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2023-03-20 20:15:46.257 INFO  (qtp1350751778-24) [   x:test_collection_shard1_replica_n1] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-03-20 20:15:46.316 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.2
+2023-03-20 20:15:46.340 WARN  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-03-20 20:15:46.379 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2023-03-20 20:15:46.760 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-03-20 20:15:46.843 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'test_collection_shard1_replica_n1' using configuration from configset test_collection, trusted=true
+2023-03-20 20:15:46.853 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.test_collection.shard1.replica_n1' (registry 'solr.core.test_collection.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@70ed52de
+2023-03-20 20:15:46.865 INFO  (qtp1350751778-24) [c:test_collection s:shard1 r:core_node2 x:test_collection_shard1_replica_n1] o.a.s.c.SolrCore [[test_collection_shard1_replica_n1] ] Opening new SolrCore at [/mnt/solrramdisk/solr-8.11.2/server/solr/test_collection_shard1_replica_n1], dataDir=[/mnt/solrramdisk/solr-8.11.2/server/solr/test_collection_shard1_replica_n1/data/]
+2023-03-20 20:15:46.886 INFO  (qtp1350751778-24) [   ] o.a.s.c.SolrCore [test_collection_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@6487bc1d
+2023-03-20 20:15:46.886 INFO  (qtp1350751778-24) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.test_collection.shard1.replica_n1 tag=SolrCore@6487bc1d
+2023-03-20 20:15:46.886 INFO  (qtp1350751778-24) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@578a93c0: rootName = null, domain = solr.core.test_collection.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.test_collection.shard1.replica_n1/com.codahale.metrics.MetricRegistry@4814e208
+2023-03-20 20:15:46.889 INFO  (qtp1350751778-24) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.test_collection.shard1.leader tag=SolrCore@6487bc1d
+2023-03-20 20:15:46.893 ERROR (qtp1350751778-24) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'test_collection_shard1_replica_n1': Unable to create core [test_collection_shard1_replica_n1] Caused by: class my.Lucene87CodecWithNoFieldCompression => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'test_collection_shard1_replica_n1': Unable to create core [test_collection_shard1_replica_n1] Caused by: class my.Lucene87CodecWithNoFieldCompression
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1381)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'test_collection_shard1_replica_n1': Unable to create core [test_collection_shard1_replica_n1] Caused by: class my.Lucene87CodecWithNoFieldCompression
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1381) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:95) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:367) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:397) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:181) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:833) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:797) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:542) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [test_collection_shard1_replica_n1]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1482) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1342) ~[?:?]
+	... 49 more
+Caused by: org.apache.solr.common.SolrException: class my.Lucene87CodecWithNoFieldCompression
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1086) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:921) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1461) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1342) ~[?:?]
+	... 49 more
+Caused by: java.lang.ClassCastException: class my.Lucene87CodecWithNoFieldCompression
+	at java.lang.Class.asSubclass(Class.java:3640) ~[?:?]
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:533) ~[?:?]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:607) ~[?:?]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:602) ~[?:?]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:594) ~[?:?]
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:931) ~[?:?]
+	at org.apache.solr.core.SolrCore.initCodec(SolrCore.java:1411) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:998) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:921) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1461) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1342) ~[?:?]
+	... 49 more
+2023-03-20 20:15:46.893 INFO  (qtp1350751778-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node2&collection.configName=test_collection&newCollection=true&name=test_collection_shard1_replica_n1&action=CREATE&numShards=1&collection=test_collection&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=400 QTime=640
+2023-03-20 20:15:46.907 ERROR (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.OverseerCollectionMessageHandler Error from shard: http://127.0.1.1:8983/solr => org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://127.0.1.1:8983/solr: Error CREATEing SolrCore 'test_collection_shard1_replica_n1': Unable to create core [test_collection_shard1_replica_n1] Caused by: class my.Lucene87CodecWithNoFieldCompression
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:681)
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://127.0.1.1:8983/solr: Error CREATEing SolrCore 'test_collection_shard1_replica_n1': Unable to create core [test_collection_shard1_replica_n1] Caused by: class my.Lucene87CodecWithNoFieldCompression
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:681) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:266) ~[?:?]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:248) ~[?:?]
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1290) ~[?:?]
+	at org.apache.solr.handler.component.HttpShardHandlerFactory$1.request(HttpShardHandlerFactory.java:169) ~[?:?]
+	at org.apache.solr.handler.component.ShardRequestor.call(ShardRequestor.java:130) ~[?:?]
+	at org.apache.solr.handler.component.ShardRequestor.call(ShardRequestor.java:41) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-03-20 20:15:46.907 ERROR (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.OverseerCollectionMessageHandler Cleaning up collection [test_collection].
+2023-03-20 20:15:46.914 INFO  (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.OverseerCollectionMessageHandler Executing Collection Cmd=action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true&deleteMetricsHistory=true, asyncId=null
+2023-03-20 20:15:46.922 INFO  (qtp1350751778-21) [   x:test_collection_shard1_replica_n1] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&deleteMetricsHistory=true&core=test_collection_shard1_replica_n1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=0 QTime=3
+2023-03-20 20:15:47.033 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDeleted path:/collections/test_collection/state.json] for collection [test_collection] has occurred - updating... (live nodes size: [1])
+2023-03-20 20:15:47.036 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDeleted path:/collections/test_collection/state.json] for collection [test_collection] has occurred - updating... (live nodes size: [1])
+2023-03-20 20:15:47.050 INFO  (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.CreateCollectionCmd Cleaned up artifacts for failed create collection for [test_collection]
+2023-03-20 20:15:47.051 ERROR (OverseerThreadFactory-18-thread-1-processing-n:127.0.1.1:8983_solr) [   ] o.a.s.c.a.c.OverseerCollectionMessageHandler Collection: test_collection operation: create failed => org.apache.solr.common.SolrException: Underlying core creation failed while creating collection: test_collection
+	at org.apache.solr.cloud.api.collections.CreateCollectionCmd.call(CreateCollectionCmd.java:372)
+org.apache.solr.common.SolrException: Underlying core creation failed while creating collection: test_collection
+	at org.apache.solr.cloud.api.collections.CreateCollectionCmd.call(CreateCollectionCmd.java:372) ~[?:?]
+	at org.apache.solr.cloud.api.collections.OverseerCollectionMessageHandler.processMessage(OverseerCollectionMessageHandler.java:271) ~[?:?]
+	at org.apache.solr.cloud.OverseerTaskProcessor$Runner.run(OverseerTaskProcessor.java:524) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-03-20 20:15:47.067 INFO  (qtp1350751778-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={replicationFactor=1&maxShardsPerNode=-1&collection.configName=test_collection&name=test_collection&action=CREATE&numShards=1&wt=json} status=400 QTime=1228
+2023-03-20 20:15:47.864 INFO  (OverseerCollectionConfigSetProcessor-72058276276404224-127.0.1.1:8983_solr-n_0000000000) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000000 doesn't exist. Requestor may have disconnected from ZooKeeper
